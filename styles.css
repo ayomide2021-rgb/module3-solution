@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(5, 1, 31);
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(65, 34, 240, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav> .logo {  
+    font-size: 30px;
+    margin-left: 0px;
+    font-weight: 600;
+}
+
+
+
+nav> .dropdown> .menu > i  {
+    font-size: 35px;
+    color: rgb(5, 1, 31);
+    text-align: right;
+    cursor: pointer;
+    display: block;
+}
+
+.dropdown{
+    display: block;
+}
+
+/*
+nav ul {
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+} */
+
+.topnav {
+    position: absolute;
+    width: 100%;
+    height: 188px;
+    background-color: rgb(55, 35, 170) ;
+    top: 80px;
+    left: 0;
+    transition: all .5s;
+    text-align: center;
+    z-index: 1;
+    display: none; 
+    
+}
+
+.topnav> li>a {
+    display: block;
+}
+
+.dropdown:hover .topnav {
+    display: block;
+}
+
+nav ul li {
+    padding: 20px 5px;
+    border-bottom: 1px solid rgb(129, 109, 238);
+}
+
+nav ul li a {
+    color: rgb(175, 164, 238);
+    font-weight: 600;
+}
+
+
+nav ul li:hover{
+    background-color: rgb(144, 127, 243);
+}
+
+nav ul li a:hover {
+    color: rgb(55, 35, 170);
+}
+
+
+@media (min-width: 768px) {
+
+    ul {
+        display: none;
+    }
+
+    nav> .dropdown> .menu {
+        display: none;
+    }
+
+    nav {
+        justify-content: left;
+    }
+
+    nav> .logo { 
+        margin-left: 30px;
+    }
+
+}
+
+.text-center {
+    text-align: center;
+    margin: 60px;
+    font-weight: 800;
+}
+
+.container {
+    background-color:rgb(129, 109, 238);
+    margin: 30px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+h3 {
+    margin: 10px 10px 20px 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container> p {
+    text-align: justify;
+}
